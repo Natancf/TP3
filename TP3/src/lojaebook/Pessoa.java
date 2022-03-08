@@ -1,13 +1,13 @@
 package lojaebook;
 
-public abstract class Pessoa {
+public abstract class Pessoa { // Classe abstrata pessoa pai de Editora e Leitor
 	protected String id;
 	protected String nome;
 	protected String email;
 	protected String senha;
 	protected Telefone numeroTelefone;
 	
-
+	// Gets e Sets
 	public String getId() {
 		return id;
 	}

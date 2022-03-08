@@ -4,11 +4,12 @@ public class Estante {
 	private Carrinho carrinho;
 	private String categoria;
 	
-	public Estante(Carrinho car, String cat) {
+	public Estante(Carrinho car, String cat) { // Construtor classe Estante
 		carrinho = car;
 		categoria = cat;
 	}
 	
+	// Gets e Sets
 	public void itensComprados() {
 		carrinho.comprar();
 	}

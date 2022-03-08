@@ -18,7 +18,7 @@ public class Ebook {
 		super();
 	}
 	
-	public Ebook(String id, String t, String g, String n, String de, Date da, String i, double p, Editora e) {
+	public Ebook(String id, String t, String g, String n, String de, Date da, String i, double p, Editora e) { // Construtor Ebook
 		this.idEbook = id;
 		this.titulo = t;
 		this.genero = g; 
@@ -29,24 +29,8 @@ public class Ebook {
 		this.preco = p;
 		this.editora = e;
 	}
-	
-	public Ebook(String idEbookNovo, String titulo2, String nomeAutor2, String genero2, String descricao2,
-			String idioma2, double preco2, Date anoPublicacao, Editora editora2) {
-		
-	}
 
-	@Override
-	public String toString() {
-		return "Ebook: " + this.titulo + 
-				"\nAutor: " + this.genero +
-				"\nCategoria: " + this.nomeAutor + 
-				"\nSinopse: " + this.descricao +
-				"\nIdioma: " + this.idioma + 
-				"\nPreco: " + this.preco +
-				"\nAno de publicacao: " + this.anoDePublicacao + 
-				"\nEditora: " + this.editora.nome; 
-	}
-
+	// Gets e Sets
 	public String getIdEbook() {
 		return idEbook;
 	}

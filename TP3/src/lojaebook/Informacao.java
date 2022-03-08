@@ -17,7 +17,7 @@ public class Informacao {
 	private Telefone[] telefone = new Telefone[50];
 	private int qtdTelefones = 0;
 	
-	public void fillWithSomeData() {
+	public void fillWithSomeData() { // Dados aleatorios para abastecer o programa
 		for(int i = 0; i < 5; i++) {
 			Date d = Calendar.getInstance().getTime();
 			leitor[i] = new Leitor("idLeitor"+i ,"Leitor"+i, "leitor"+1+"@email.com", "senhaLeitor"+1, (i+1)*112233445, telefone[i]);
@@ -32,6 +32,7 @@ public class Informacao {
 		qtdTelefones = 5;
 	}
 	
+	// Gets e Sets
 	public Leitor[] getLeitor() {
 		return leitor;
 	}

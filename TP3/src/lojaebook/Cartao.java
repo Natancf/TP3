@@ -11,7 +11,7 @@ public class Cartao {
 	private int cvv;
 	private boolean validaCartao = false;
 	
-	public Cartao(Carrinho c, String f, String nu, String no, Date v, int cv, boolean valid) {
+	public Cartao(Carrinho c, String f, String nu, String no, Date v, int cv, boolean valid) { // Construtor classe Cartao
 		carrinho = c;
 		formaDePagamento = f;
 		numeroCartao = nu;
@@ -21,6 +21,7 @@ public class Cartao {
 		validaCartao = valid;
 	}
 
+	// Gets e Sets
 	public Carrinho getCarrinho() {
 		return carrinho;
 	}
@@ -69,7 +70,7 @@ public class Cartao {
 		this.cvv = cvv;
 	}
 	
-	public void validaCartao() {
+	public void validaCartao() { // Verifica se o numero do cartao é valido
 		String numString;
 		int Soma =0;
 		if(numeroCartao.length() <= 15) {

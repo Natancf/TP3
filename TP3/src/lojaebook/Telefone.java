@@ -6,7 +6,7 @@ public class Telefone {
 	private int numero;
 	
 
-	public Telefone(int cod, int num) {
+	public Telefone(int cod, int num) { // Construtor Telefone
 		DDD = cod;
 		numero = num;
 	}
@@ -17,7 +17,7 @@ public class Telefone {
 		return "Telefone: (" + DDD + ") " + numero;
 	}
 
-
+	// Gets e Sets
 	public int getDDD() {
 		return DDD;
 	}

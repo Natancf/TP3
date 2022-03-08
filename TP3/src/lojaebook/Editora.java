@@ -8,7 +8,7 @@ public class Editora extends Pessoa{
 		cnpj = c;
 	}
 	
-	public Editora(String i, String n, String e, Telefone t, String s, long c) {
+	public Editora(String i, String n, String e, Telefone t, String s, long c) { // Construtor classe Editora
 		id = i;
 		nome = n;
 		email = e;
@@ -17,7 +17,7 @@ public class Editora extends Pessoa{
 		cnpj = c;
 	}
 	
-	public Editora(String i, String n, String e, String s, long c, Telefone t) {
+	public Editora(String i, String n, String e, String s, long c, Telefone t) { // Construtor para Informacoes
 		id = i;
 		nome = n;
 		email = e;
@@ -26,6 +26,7 @@ public class Editora extends Pessoa{
 		numeroTelefone = t;
 	}
 
+	// Gets e Sets
 	public long getCnpj() {
 		return cnpj;
 	}

@@ -9,14 +9,14 @@ public class Carrinho {
 	private Cartao cartao;
 	private Ebook[] verifica;
 	
-	public Carrinho(Ebook eb, double p, int q, Cartao c) {
+	public Carrinho(Ebook eb, double p, int q, Cartao c) { // Construtor de Carrinho
 		this.ebookselecionado[0] = eb;
 		this.precoTotal = p;
 		this.quantidadeEbook = q;
 		cartao = c;
 	}
 	
-
+	// Gets e Sets
 	public Ebook[] getEbook() {
 		return this.ebookselecionado;
 	}
@@ -32,7 +32,6 @@ public class Carrinho {
 	public void setPrecoTotal(double precoTotal) {
 		this.precoTotal = precoTotal;
 	}
-	
 	
 	public int getQuantidadeEbook() {
 		return quantidadeEbook;
@@ -50,7 +49,7 @@ public class Carrinho {
 		this.cartao = cartao;
 	}
 
-	public Ebook[] comprar() {
+	public Ebook[] comprar() { // Metodo para comprar o ebook
 		if (cartao.isValidaCartao() == true) {
 			Scanner ler = new Scanner(System.in);
 			System.out.println("R$" + getPrecoTotal());

@@ -9,7 +9,7 @@ public class Leitor extends Pessoa{
 		super();
 	}
 	
-	public Leitor(String i, String n, String em, String s, Estante es, Carrinho ca, long cp) {
+	public Leitor(String i, String n, String em, String s, Estante es, Carrinho ca, long cp) { // Construtor classe Leitor
 		id = i;
 		nome = n;
 		email = em;
@@ -19,7 +19,7 @@ public class Leitor extends Pessoa{
 		cpf = cp;
 	}
 
-	public Leitor(String i, String n, String em, String s, long cp, Telefone telefone) {
+	public Leitor(String i, String n, String em, String s, long cp, Telefone telefone) { //Construtor para Informacao
 		id = i;
 		nome = n;
 		email = em;
@@ -27,6 +27,7 @@ public class Leitor extends Pessoa{
 		cpf = cp;
 	}
 
+	// Gets e Sets
 	public Estante getEstante() {
 		return estante;
 	}
